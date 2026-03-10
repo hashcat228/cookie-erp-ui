@@ -1,18 +1,27 @@
-import { Button } from "@/components/ui/button"
+import { LoginForm } from "@/components/login-form"
 
 export function App() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
+    <div className="grid min-h-svh lg:grid-cols-2">
+      <div className="flex flex-col gap-4 p-6 md:p-10">
+        <div className="flex justify-center gap-2 md:justify-start">
+          <a href="#" className="flex items-center gap-2 font-medium tracking-tight hover:opacity-80 transition-opacity">
+            <img src="/logo.svg" alt="" className="size-6" />
+            <span className="text-base">Альфа С</span>
+          </a>
         </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
+        <div className="flex flex-1 items-center justify-center">
+          <div className="w-full max-w-xs">
+            <LoginForm />
+          </div>
         </div>
+      </div>
+      <div className="relative hidden bg-muted lg:block">
+        <img
+          src="/logo.svg"
+          alt="Альфа С"
+          className="absolute inset-0 h-full w-full object-contain p-20 dark:brightness-[0.8] dark:grayscale-[0.3]"
+        />
       </div>
     </div>
   )
