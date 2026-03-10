@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { Eye, EyeOff, Loader2 } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -10,8 +10,9 @@ import {
   FieldLabel,
 } from "@/components/ui/field"
 import { Input } from "@/components/ui/input"
+import { Typography } from "@/components/ui/typography"
 
-export function LoginForm({
+export function LoginFormUpdated({
   className,
   ...props
 }: React.ComponentProps<"form">) {
@@ -23,12 +24,9 @@ export function LoginForm({
     setIsLoading(true)
 
     // Simulate API call
-    const timeoutId = setTimeout(() => {
+    setTimeout(() => {
       setIsLoading(false)
     }, 2000)
-
-    // Cleanup on unmount
-    return () => clearTimeout(timeoutId)
   }
 
   return (
@@ -39,10 +37,10 @@ export function LoginForm({
     >
       <FieldGroup>
         <div className="flex flex-col items-center gap-2 text-center">
-          <h1 className="text-2xl font-bold tracking-tight">Войдите в систему</h1>
-          <p className="text-sm text-balance text-muted-foreground">
+          <Typography variant="heading-lg" as="h1">Войдите в систему</Typography>
+          <Typography variant="body-sm" className="text-balance text-muted-foreground">
             Введите ваши данные для входа на строительный портал компании Альфа С
-          </p>
+          </Typography>
         </div>
         <Field>
           <FieldLabel htmlFor="email">Email</FieldLabel>

@@ -1,44 +1,47 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/ibm-plex-sans";
 
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(0.9813 0.0074 260.7315);
-  --foreground: oklch(0.2695 0.0069 229.1056);
-  --card: oklch(1.0000 0 0);
-  --card-foreground: oklch(0.2695 0.0069 229.1056);
-  --popover: oklch(1.0000 0 0);
-  --popover-foreground: oklch(0.2695 0.0069 229.1056);
-  --primary: oklch(0.4631 0.1651 260.7234);
-  --primary-foreground: oklch(1.0000 0 0);
-  --secondary: oklch(0.9539 0.0025 228.7847);
-  --secondary-foreground: oklch(0.2695 0.0069 229.1056);
-  --muted: oklch(0.9622 0.0137 258.3449);
-  --muted-foreground: oklch(0.5132 0.0156 226.7908);
-  --accent: oklch(0.9435 0.0212 259.1909);
-  --accent-foreground: oklch(0.2913 0.0931 260.4615);
-  --destructive: oklch(0.5886 0.2304 27.2744);
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0.008 326);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0.008 326);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0.008 326);
+  --primary: oklch(0.505 0.213 27.518);
+  --primary-foreground: oklch(0.971 0.013 17.38);
+  --secondary: oklch(0.967 0.001 286.375);
+  --secondary-foreground: oklch(0.21 0.006 285.885);
+  --muted: oklch(0.96 0.003 325.6);
+  --muted-foreground: oklch(0.542 0.034 322.5);
+  --accent: oklch(0.96 0.003 325.6);
+  --accent-foreground: oklch(0.212 0.019 322.12);
+  --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(1.0000 0 0);
-  --border: oklch(0.9080 0.0042 236.5020);
-  --input: oklch(0.9080 0.0042 236.5020);
-  --ring: oklch(0.4631 0.1651 260.7234);
-  --chart-1: oklch(0.5140 0.1710 34.8134);
-  --chart-2: oklch(0.6527 0.2068 142.2980);
-  --chart-3: oklch(0.6707 0.2213 37.6393);
-  --chart-4: oklch(0.5886 0.2304 27.2744);
-  --chart-5: oklch(0.5625 0.1484 319.5268);
-  --sidebar: oklch(1.0000 0 0);
-  --sidebar-foreground: oklch(0.4210 0.0133 226.2604);
-  --sidebar-primary: oklch(0.4631 0.1651 260.7234);
-  --sidebar-primary-foreground: oklch(1.0000 0 0);
-  --sidebar-accent: oklch(0.9697 0.0017 247.8393);
-  --sidebar-accent-foreground: oklch(0.2695 0.0069 229.1056);
-  --sidebar-border: oklch(0.9237 0.0026 228.7862);
-  --sidebar-ring: oklch(0.4631 0.1651 260.7234);
-  --font-sans: Inter, system-ui, sans-serif;
-  --font-serif: Inter, ui-sans-serif, sans-serif, system-ui;
+  --border: oklch(0.922 0.005 325.62);
+  --input: oklch(0.922 0.005 325.62);
+  --ring: oklch(0.711 0.019 323.02);
+  --chart-1: oklch(0.808 0.114 19.571);
+  --chart-2: oklch(0.637 0.237 25.331);
+  --chart-3: oklch(0.577 0.245 27.325);
+  --chart-4: oklch(0.505 0.213 27.518);
+  --chart-5: oklch(0.444 0.177 26.899);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0.008 326);
+  --sidebar-primary: oklch(0.577 0.245 27.325);
+  --sidebar-primary-foreground: oklch(0.971 0.013 17.38);
+  --sidebar-accent: oklch(0.96 0.003 325.6);
+  --sidebar-accent-foreground: oklch(0.212 0.019 322.12);
+  --sidebar-border: oklch(0.922 0.005 325.62);
+  --sidebar-ring: oklch(0.711 0.019 323.02);
+  --font-sans: 'IBM Plex Sans Variable', 'IBM Plex Sans', Arial, sans-serif;
+  --font-serif: 'IBM Plex Sans Variable', 'IBM Plex Sans', ui-sans-serif, sans-serif, system-ui;
   --font-mono: JetBrains Mono, monospace;
-  --radius: 0.5rem;
+  --radius: 0.625rem;
   --shadow-x: 0px;
   --shadow-y: 2px;
   --shadow-blur: 4px;
@@ -58,40 +61,40 @@
 }
 
 .dark {
-  --background: oklch(0.2154 0.0060 236.8514);
-  --foreground: oklch(0.9697 0.0017 247.8393);
-  --card: oklch(0.2695 0.0069 229.1056);
-  --card-foreground: oklch(0.9697 0.0017 247.8393);
-  --popover: oklch(0.3214 0.0087 233.9474);
-  --popover-foreground: oklch(0.9697 0.0017 247.8393);
-  --primary: oklch(0.7150 0.1168 261.0194);
-  --primary-foreground: oklch(0.1953 0.0543 260.4016);
-  --secondary: oklch(0.3214 0.0087 233.9474);
-  --secondary-foreground: oklch(0.9697 0.0017 247.8393);
-  --muted: oklch(0.3214 0.0087 233.9474);
-  --muted-foreground: oklch(0.7651 0.0115 234.8726);
-  --accent: oklch(0.4210 0.0133 226.2604);
-  --accent-foreground: oklch(0.9697 0.0017 247.8393);
-  --destructive: oklch(0.5886 0.2304 27.2744);
+  --background: oklch(0.145 0.008 326);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.212 0.019 322.12);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.212 0.019 322.12);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.444 0.177 26.899);
+  --primary-foreground: oklch(0.971 0.013 17.38);
+  --secondary: oklch(0.274 0.006 286.033);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.263 0.024 320.12);
+  --muted-foreground: oklch(0.711 0.019 323.02);
+  --accent: oklch(0.263 0.024 320.12);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
   --destructive-foreground: oklch(1.0000 0 0);
-  --border: oklch(0.3214 0.0087 233.9474);
-  --input: oklch(0.5579 0.0171 229.1873);
-  --ring: oklch(0.6227 0.1583 260.6036);
-  --chart-1: oklch(0.6227 0.1583 260.6036);
-  --chart-2: oklch(0.7722 0.2470 142.2861);
-  --chart-3: oklch(0.7165 0.1857 42.9061);
-  --chart-4: oklch(0.6344 0.2003 23.0575);
-  --chart-5: oklch(0.6502 0.1167 319.3257);
-  --sidebar: oklch(0.2695 0.0069 229.1056);
-  --sidebar-foreground: oklch(0.9697 0.0017 247.8393);
-  --sidebar-primary: oklch(0.6227 0.1583 260.6036);
-  --sidebar-primary-foreground: oklch(1.0000 0 0);
-  --sidebar-accent: oklch(0.4210 0.0133 226.2604);
-  --sidebar-accent-foreground: oklch(0.9697 0.0017 247.8393);
-  --sidebar-border: oklch(0.3214 0.0087 233.9474);
-  --sidebar-ring: oklch(0.6227 0.1583 260.6036);
-  --font-sans: Inter, system-ui, sans-serif;
-  --font-serif: Inter, ui-sans-serif, sans-serif, system-ui;
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.542 0.034 322.5);
+  --chart-1: oklch(0.808 0.114 19.571);
+  --chart-2: oklch(0.637 0.237 25.331);
+  --chart-3: oklch(0.577 0.245 27.325);
+  --chart-4: oklch(0.505 0.213 27.518);
+  --chart-5: oklch(0.444 0.177 26.899);
+  --sidebar: oklch(0.212 0.019 322.12);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.637 0.237 25.331);
+  --sidebar-primary-foreground: oklch(0.971 0.013 17.38);
+  --sidebar-accent: oklch(0.263 0.024 320.12);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.542 0.034 322.5);
+  --font-sans: 'IBM Plex Sans Variable', 'IBM Plex Sans', Arial, sans-serif;
+  --font-serif: 'IBM Plex Sans Variable', 'IBM Plex Sans', ui-sans-serif, sans-serif, system-ui;
   --font-mono: JetBrains Mono, monospace;
   --radius: 0.5rem;
   --shadow-x: 0px;
@@ -144,7 +147,7 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  --font-sans: var(--font-sans);
+  --font-sans: 'IBM Plex Sans Variable', 'IBM Plex Sans', Arial, sans-serif;
   --font-mono: var(--font-mono);
   --font-serif: var(--font-serif);
 
@@ -161,6 +164,63 @@
   --shadow-lg: var(--shadow-lg);
   --shadow-xl: var(--shadow-xl);
   --shadow-2xl: var(--shadow-2xl);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+
+  /* Typography Scale */
+  --font-size-display-2xl: 48px;
+  --font-size-display-xl: 36px;
+  --font-size-display-lg: 30px;
+
+  --font-size-heading-xl: 24px;
+  --font-size-heading-lg: 22px;
+  --font-size-heading-md: 16px;
+  --font-size-heading-sm: 14px;
+  --font-size-heading-xs: 12px;
+
+  --font-size-body-lg: 16px;
+  --font-size-body-md: 14px;
+  --font-size-body-sm: 12px;
+  --font-size-body-xs: 11px;
+
+  --font-size-label-lg: 14px;
+  --font-size-label-md: 12px;
+  --font-size-label-sm: 11px;
+
+  --font-size-code-lg: 14px;
+  --font-size-code-md: 13px;
+  --font-size-code-sm: 11px;
+
+  /* Line Heights */
+  --line-height-display-2xl: 56px;
+  --line-height-display-xl: 44px;
+  --line-height-display-lg: 38px;
+
+  --line-height-heading-xl: 32px;
+  --line-height-heading-lg: 32px;
+  --line-height-heading-md: 24px;
+  --line-height-heading-sm: 20px;
+  --line-height-heading-xs: 16px;
+
+  --line-height-body-lg: 24px;
+  --line-height-body-md: 20px;
+  --line-height-body-sm: 16px;
+  --line-height-body-xs: 16px;
+
+  --line-height-label-lg: 20px;
+  --line-height-label-md: 16px;
+  --line-height-label-sm: 16px;
+
+  --line-height-code-lg: 20px;
+  --line-height-code-md: 20px;
+  --line-height-code-sm: 16px;
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
 }
 
 @layer base {
@@ -169,5 +229,14 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+@layer utilities {
+  .font-variant-numeric-tabular {
+    font-variant-numeric: tabular-nums;
   }
 }

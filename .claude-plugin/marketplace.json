@@ -1,0 +1,77 @@
+{
+  "name": "cookie-erp-ui",
+  "displayName": "Cookie ERP UI",
+  "description": "Production-ready UI library for construction ERP platform. Built with React 19, Vite, Tailwind CSS v4, shadcn/ui, and IBM Plex Sans typography. Includes 50+ components, dark/light theme support, and comprehensive design system for construction management.",
+  "version": "1.0.0",
+  "author": "hashcat228",
+  "repository": "https://github.com/hashcat228/cookie-erp-ui",
+  "license": "MIT",
+  "tags": [
+    "ui-library",
+    "react",
+    "tailwind",
+    "shadcn",
+    "design-system",
+    "erp",
+    "construction",
+    "typescript",
+    "vite"
+  ],
+  "category": "ui-components",
+  "readme": "README.md",
+  "documentation": "TYPOGRAPHY_IMPLEMENTATION.md",
+  "homepage": "https://github.com/hashcat228/cookie-erp-ui",
+  "keywords": [
+    "react components",
+    "ui library",
+    "design system",
+    "tailwind css",
+    "shadcn ui",
+    "construction erp",
+    "ibm plex sans",
+    "dark mode",
+    "typescript"
+  ],
+  "features": [
+    "50+ production-ready React components",
+    "IBM Plex Sans typography system optimized for Cyrillic",
+    "Dark/Light theme support with smooth transitions",
+    "Tailwind CSS v4 with semantic color tokens",
+    "shadcn/ui radix-vega preset",
+    "Comprehensive typography scale for dense tables and financial data",
+    "Accessible components with ARIA support",
+    "TypeScript support",
+    "Vite for fast development"
+  ],
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/hashcat228/cookie-erp-ui/main/docs/screenshots/typography-showcase.png",
+      "caption": "Typography Showcase - All typography variants"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hashcat228/cookie-erp-ui/main/docs/screenshots/login-page.png",
+      "caption": "Login Page - Dark and Light themes"
+    }
+  ],
+  "installation": {
+    "npm": "npm install",
+    "pnpm": "pnpm install",
+    "yarn": "yarn install"
+  },
+  "usage": "See TYPOGRAPHY_IMPLEMENTATION.md for detailed usage examples and component documentation.",
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.1.17",
+    "@fontsource-variable/ibm-plex-sans": "^5.2.8"
+  },
+  "devDependencies": {
+    "vite": "^7.3.1",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "public": true,
+  "verified": false
+}
