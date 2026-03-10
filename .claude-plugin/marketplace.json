@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "author": "hashcat228",
   "repository": "https://github.com/hashcat228/cookie-erp-ui",
+  "branch": "ui-library",
   "license": "MIT",
   "tags": [
     "ui-library",
@@ -20,7 +21,7 @@
   "category": "ui-components",
   "readme": "README.md",
   "documentation": "TYPOGRAPHY_IMPLEMENTATION.md",
-  "homepage": "https://github.com/hashcat228/cookie-erp-ui",
+  "homepage": "https://github.com/hashcat228/cookie-erp-ui/tree/ui-library",
   "keywords": [
     "react components",
     "ui library",
@@ -45,11 +46,11 @@
   ],
   "screenshots": [
     {
-      "url": "https://raw.githubusercontent.com/hashcat228/cookie-erp-ui/main/docs/screenshots/typography-showcase.png",
+      "url": "https://raw.githubusercontent.com/hashcat228/cookie-erp-ui/ui-library/docs/screenshots/typography-showcase.png",
       "caption": "Typography Showcase - All typography variants"
     },
     {
-      "url": "https://raw.githubusercontent.com/hashcat228/cookie-erp-ui/main/docs/screenshots/login-page.png",
+      "url": "https://raw.githubusercontent.com/hashcat228/cookie-erp-ui/ui-library/docs/screenshots/login-page.png",
       "caption": "Login Page - Dark and Light themes"
     }
   ],
